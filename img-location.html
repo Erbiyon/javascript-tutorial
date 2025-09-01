@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container mt-5">
+    <h1 class="text-center my-5">ยินดีต้อนรับสู่บทเรียน JavaScript ต่อ</h1>
+
+    <div class="border mx-auto p-2 my-3 rounded shadow-sm" style="width: 500px;">
+        <h3>Javascript and Images (เปลี่ยนภาพ)</h3>
+        <img id="myImg" src="public/cat.jpg" width="200">
+        <button onclick="changeImage()" class="btn btn-primary">เปลี่ยนภาพ</button>
+
+        <h3>Javascript and Images (ซ่อน / แสดงภาพ)</h3>
+        <img id="photo" src="public/flower.jpg" width="200">
+        <button onclick="hideImg()" class="btn btn-danger">ซ่อน</button>
+        <button onclick="showImg()" class="btn btn-success">แสดง</button>
+
+        <h3>Javascript and Images (เปลี่ยนภาพเมื่อ hover)</h3>
+        <img id="hoverImg" src="public/smile.png" width="200">
+
+        <h3>Javascript and Images (ขยาย / ย่อภาพ)</h3>
+        <img id="zoomImg" src="public/nature.jpg" width="200">
+    </div>
+
+    <div class="border mx-auto p-2 my-3 rounded shadow-sm" style="width: 500px;">
+        <h3>Javascript and Location</h3>
+
+        <button onclick="showLocation()" class="btn btn-info">แสดงข้อมูล URL</button>
+        <button onclick="goGoogle()" class="btn btn-primary">ไปที่ Google</button>
+        <button onclick="reloadPage()" class="btn btn-warning">รีเฟรชหน้านี้</button>
+
+        <p class="urlInfo"></p>
+    </div>
+
+    <a href="html-elements.html" class="btn btn-secondary">กลับไป</a>
+</body>
+<script src="src/lesson-four.js"></script>
+
+</html>

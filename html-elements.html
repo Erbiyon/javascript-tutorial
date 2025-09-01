@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container mt-5">
+    <h1 class="text-center my-5">ยินดีต้อนรับสู่บทเรียน JavaScript ต่อ</h1>
+
+    <div class="border mx-auto p-2 my-3 rounded shadow-sm" style="width: 500px;">
+        <h3>Javascript and HTML Elements (อ่านค่าข้อมูลจาก HTML)</h3>
+        <p id="title">Hello</p>
+        <p class="text">ข้อความที่ 1</p>
+        <p class="text">ข้อความที่ 2</p>
+        <div>นี่คือ div</div>
+    </div>
+
+    <div class="border mx-auto p-2 my-3 rounded shadow-sm" style="width: 500px;">
+        <h3>Javascript and HTML Elements (แก้ไขเนื้อหาหรือคุณสมบัติ)</h3>
+        <div id="box">Hello</div> <br>
+        <div id="demo"><b>Hello</b> World</div> <br>
+        <div id="demo2" style="display:none;">Hidden <b>Text</b></div> <br>
+        <p id="msg">Hello</p> <br>
+        <a id="link" href="https://google.com">Google</a>
+    </div>
+
+    <div class="border mx-auto p-2 my-3 rounded shadow-sm" style="width: 500px;">
+        <h3>Javascript and HTML Elements (สร้างหรือลบ Elements)</h3>
+        <div id="box2"></div>
+
+        <ul id="list">
+            <li>Item A</li>
+            <li id="itemB">Item B</li>
+        </ul>
+
+        <ul id="myList">
+            <li>One</li>
+            <li>Two</li>
+        </ul>
+
+        <button onclick="addItem()" class="btn btn-primary">เพิ่ม</button>
+        <button onclick="removeItem()" class="btn btn-danger">ลบ</button>
+
+        <ul id="myList2">
+            <li>Item 1</li>
+        </ul>
+
+    </div>
+
+    <div class="border mx-auto p-2 my-3 rounded shadow-sm" style="width: 500px;">
+        <h3>Javascript and HTML Elements (ตอบสนองต่อเหตุการณ์ Events)</h3>
+
+        <button onclick="alert('กดปุ่มแล้ว!')" class="btn btn-info">กดเลย</button>
+
+        <input id="name" type="text" placeholder="พิมพ์ชื่อ" class="form-control mt-2">
+        <p id="output" class="mt-2"></p>
+    </div>
+
+    <div class="d-flex justify-content-between">
+        <a href="string-manipulation.html" class="btn btn-secondary">กลับไป</a>
+        <a href="img-location.html" class="btn btn-secondary">ต่อไป</a>
+    </div>
+</body>
+<script src="src/lesson-tree.js"></script>
+<script src="src/event.js"></script>
+
+</html>

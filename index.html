@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container mt-5">
+    <h1 class="text-center my-5">ยินดีต้อนรับสู่บทเรียน JavaScript</h1>
+
+    <div class="border mx-auto p-2 my-3 rounded shadow-sm" style="width: 500px;">
+        <h3>IF Statement</h3>
+        <input type="text" id="AgeInput" placeholder="กรอกปีเกิด" class="form-control">
+        <p>ผู้บรรลุนิติภาวะ: <span id="AdultStatus"></span></p>
+        <button id="CheckAgeButton" class="btn btn-primary">ตรวจสอบอายุ</button>
+    </div>
+
+    <div class="border mx-auto p-2 my-3 rounded shadow-sm" style="width: 500px;">
+        <h3>Switch Statement</h3>
+        <p>กล้วย, ส้ม, มะม่วง</p>
+        <select id="FruitInput" class="form-control">
+            <option value="">เลือกผลไม้</option>
+            <option value="กล้วย">กล้วย</option>
+            <option value="ส้ม">ส้ม</option>
+            <option value="มะม่วง">มะม่วง</option>
+        </select>
+        <p>ผลไม้ที่เลือก: <span id="SelectedFruit" class="h1"></span></p>
+        <button id="CheckFruitButton" class="btn btn-primary">ตรวจสอบผลไม้</button>
+    </div>
+
+    <div class="border mx-auto p-2 my-3 rounded shadow-sm" style="width: 500px;">
+        <h3>JavaScript For Loops</h3>
+        <p>สร้าง * ขั้นบรรได</p>
+        <input type="text" id="NumberInput" placeholder="พิมพ์ตัวเลข" class="form-control">
+        <p>ผลลัพธ์:</p>
+        <p id="bandai" class="h1"></p>
+        <button id="CheckNumberButton" class="btn btn-primary">สร้าง</button>
+    </div>
+
+    <div class="border mx-auto p-2 my-3 rounded shadow-sm" style="width: 500px;">
+        <h3>JavaScript While Loops</h3>
+        <p>สร้าง * ขั้นบรรได</p>
+        <input type="text" id="Number2Input" placeholder="พิมพ์ตัวเลข" class="form-control">
+        <p>ผลลัพธ์:</p>
+        <p id="bandai2" class="h1"></p>
+        <button id="CheckNumber2Button" class="btn btn-primary">สร้าง</button>
+    </div>
+
+    <div class="border mx-auto p-2 my-3 rounded shadow-sm" style="width: 500px;">
+        <h3>Arrays and Functions</h3>
+        <button id="ArrayButton" class="btn btn-primary">คลิ๊ก</button>
+    </div>
+
+    <div class="d-flex justify-content-end">
+        <a href="string-manipulation.html" class="btn btn-secondary">ต่อไป</a>
+    </div>
+</body>
+<script src="src/main.js"></script>
+
+</html>
