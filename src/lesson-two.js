@@ -8,34 +8,36 @@ document.getElementById('StringButton').addEventListener('click', function () {
         document.getElementById('StringResult').innerHTML = `
             ${str1} <br>
             ${str2} <br>
-            ${str3}
+            ${str3} <br>
+            ${str3[1]}
+
         `;
     }
 
     // displayStrings();
+
+    // ความยาว (length)
+    let text = "Mattana";
+    let length = text.length;
+
+    function displayStrings2() {
+        document.getElementById('StringResult2').innerHTML = `
+            ${length}
+        `;
+    }
+
+    // displayStrings2();
 
     // การต่อ String
     let name = "Mat";
     let greet = "Hello " + name;
     let greet2 = `Hello ${name}!`;
 
-    function displayStrings2() {
-        document.getElementById('StringResult2').innerHTML = `
+    function displayStrings3() {
+        document.getElementById('StringResult3').innerHTML = `
         ${greet} <br>
         ${greet2}
     `;
-    }
-
-    // displayStrings2();
-
-    // ความยาว (length)
-    let text = "Mattana";
-    let length = text.length;
-
-    function displayStrings3() {
-        document.getElementById('StringResult3').innerHTML = `
-            ${length}
-        `;
     }
 
     // displayStrings3();
@@ -53,7 +55,7 @@ document.getElementById('StringButton').addEventListener('click', function () {
     // displayStrings4();
 
     // การค้นหาข้อความ
-    let str5 = "I Love You";
+    let str5 = "I Love You Love";
 
     function displayStrings5() {
         document.getElementById('StringResult5').innerHTML = `
@@ -127,7 +129,7 @@ document.getElementById('StringButton').addEventListener('click', function () {
 
     function displayStrings10() {
         document.getElementById('StringResult10').innerHTML = `
-            ${str11.repeat(2)}
+            ${str11.repeat(7)}
         `;
     }
 

@@ -37,13 +37,13 @@ document.getElementById('CheckFruitButton').addEventListener('click', function (
 // JavaScript For Loops
 document.getElementById('CheckNumberButton').addEventListener('click', function () {
     let number = parseInt(document.getElementById('NumberInput').value);
-    let result = document.getElementById('bandai').innerHTML = "";
+    let result2 = document.getElementById('bandai').innerHTML = "";
 
     for (let i = 1; i <= number; i++) {
-        result += "*".repeat(i) + "<br>";
+        result2 += "*".repeat(i) + "<br>";
     }
 
-    document.getElementById('bandai').innerHTML = result;
+    document.getElementById('bandai').innerHTML = result2;
 });
 
 // JavaScript While Loops
@@ -62,11 +62,14 @@ document.getElementById('CheckNumber2Button').addEventListener('click', function
 
 // Arrays and Functions
 document.getElementById('ArrayButton').addEventListener('click', function () {
-    let fruits = ["กล้วย", "ส้ม", "มะม่วง"];
+    let fruits = [
+        ["กล้วย", "ส้ม", "มะม่วง"],
+        ["แอปเปิ้ล", "องุ่น", "สตรอเบอร์รี่"]
+    ];
 
     function greet(fruit) {
         return fruit + "!";
     }
 
-    alert(greet(fruits));
+    alert(greet(fruits[1][2]));
 });
